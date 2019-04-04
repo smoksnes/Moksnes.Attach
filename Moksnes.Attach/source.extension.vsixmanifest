@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="Sebastian Moksnes.baca7dfd-8d8b-483d-919f-878c058f5c11" Version="1.1" Language="en-US" Publisher="Sebastian Moksnes" />
     <DisplayName>Moksnes Attach To IIS</DisplayName>
-    <Description xml:space="preserve">An extension that enabled Visual Studio 2017 to easily attach to the IIS.</Description>
+    <Description xml:space="preserve">An extension that enables Visual Studio 2017 and 2019 to easily attach to the IIS.</Description>
     <MoreInfo>https://github.com/smoksnes/Moksnes.Attach</MoreInfo>
     <Tags>Visual Studio 2017, Visual Studio 2019, Attach to, IIS</Tags>
   </Metadata>
