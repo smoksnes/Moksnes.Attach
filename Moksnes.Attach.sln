@@ -14,20 +14,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{
 		Moksnes.Attach.Shared\Resources\Command1Package.ico = Moksnes.Attach.Shared\Resources\Command1Package.ico
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moksnes.Attach.Dev17", "Moksnes.Attach.Dev17\Moksnes.Attach.Dev17.csproj", "{53F565B7-64DC-4FD8-B0B2-AA732E31709E}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Moksnes.Attach.Shared\Moksnes.Attach.Shared.projitems*{53f565b7-64dc-4fd8-b0b2-aa732e31709e}*SharedItemsImports = 4
 		Moksnes.Attach.Shared\Moksnes.Attach.Shared.projitems*{96ed9ae4-4185-41ef-9368-7b11413cc84b}*SharedItemsImports = 13
 		Moksnes.Attach.Shared\Moksnes.Attach.Shared.projitems*{a0ebaeb0-3bcd-4a1b-ab99-94ce38a6e103}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Debug|x86.Build.0 = Debug|Any CPU
 		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}.Release|x86.Build.0 = Release|Any CPU
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Debug|x86.ActiveCfg = Debug|x86
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Debug|x86.Build.0 = Debug|x86
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Release|x86.ActiveCfg = Release|x86
+		{53F565B7-64DC-4FD8-B0B2-AA732E31709E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
