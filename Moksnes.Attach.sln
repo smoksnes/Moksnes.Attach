@@ -1,11 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26127.3
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moksnes.Attach", "Moksnes.Attach\Moksnes.Attach.csproj", "{A0EBAEB0-3BCD-4A1B-AB99-94CE38A6E103}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Moksnes.Attach.Shared", "Moksnes.Attach.Shared\Moksnes.Attach.Shared.shproj", "{96ED9AE4-4185-41EF-9368-7B11413CC84B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{F64C9786-F6E4-42AF-9EB5-1E0AD24C3EDD}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\AttachPackage.vsct = Resources\AttachPackage.vsct
+		Moksnes.Attach.Shared\Resources\Command1.png = Moksnes.Attach.Shared\Resources\Command1.png
+		Moksnes.Attach.Shared\Resources\Command1Package.ico = Moksnes.Attach.Shared\Resources\Command1Package.ico
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Moksnes.Attach.Shared\Moksnes.Attach.Shared.projitems*{96ed9ae4-4185-41ef-9368-7b11413cc84b}*SharedItemsImports = 13
+		Moksnes.Attach.Shared\Moksnes.Attach.Shared.projitems*{a0ebaeb0-3bcd-4a1b-ab99-94ce38a6e103}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -18,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44A4BF88-3710-4023-911B-51BA108980A9}
 	EndGlobalSection
 EndGlobal
