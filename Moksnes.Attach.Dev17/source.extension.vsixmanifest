@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="Moksnes.Attach.Dev17.f0ec8cc5-0320-4b28-a691-bc1602393d34" Version="0.1" Language="en-US" Publisher="Sebastian Moksnes" />
-        <DisplayName>Moksnes Attach To IIS</DisplayName>
-        <Description xml:space="preserve">An extension that enables Visual Studio 2022 to easily attach to the IIS.</Description>
+        <DisplayName>Moksnes Attach To IIS for Visual Studio 2022</DisplayName>
+        <Description xml:space="preserve">An extension that enables Visual Studio 2022 to easily attach to the IIS. This is temporarily added as a separate plugin as Marketplace currently doesn't handle multiple targets in the same extension.</Description>
         <MoreInfo>https://github.com/smoksnes/Moksnes.Attach</MoreInfo>
         <Tags>Visual Studio 2022, Attach to, IIS</Tags>
     </Metadata>
