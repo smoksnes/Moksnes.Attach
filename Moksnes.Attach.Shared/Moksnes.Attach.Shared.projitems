@@ -9,10 +9,6 @@
     <Import_RootNamespace>Moksnes.Attach.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AttachIISCommand.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AttachPackage.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)VSPackage.resx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>

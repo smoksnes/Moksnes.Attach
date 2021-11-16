@@ -56,6 +56,6 @@ namespace Moksnes.Attach
             base.Initialize();
         }
 
-        #endregion
+#endregion
     }
 }
