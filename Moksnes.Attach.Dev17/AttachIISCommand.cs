@@ -26,7 +26,7 @@ namespace Moksnes.Attach
         /// <summary>
         /// VS Package that provides this command, not null.
         /// </summary>
-        private readonly AsyncPackage package;
+        private readonly Package package;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AttachIISCommand"/> class.
@@ -34,7 +34,7 @@ namespace Moksnes.Attach
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         /// <param name="commandService">Command service to add command to, not null.</param>
-        private AttachIISCommand(AsyncPackage package, OleMenuCommandService commandService)
+        private AttachIISCommand(Package package, OleMenuCommandService commandService)
         {
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
@@ -53,18 +53,7 @@ namespace Moksnes.Attach
             private set;
         }
 
-        /// <summary>
-        /// Gets the service provider from the owner package.
-        /// </summary>
-        private Microsoft.VisualStudio.Shell.IAsyncServiceProvider ServiceProvider
-        {
-            get
-            {
-                return this.package;
-            }
-        }
-
-        private IServiceProvider SyncServiceProvider
+        private IServiceProvider ServiceProvider
         {
             get
             {
@@ -76,13 +65,14 @@ namespace Moksnes.Attach
         /// Initializes the singleton instance of the command.
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
-        public static async Task InitializeAsync(AsyncPackage package)
+        public static void Initialize(Package package)
         {
             // Switch to the main thread - the call to AddCommand in Command1's constructor requires
             // the UI thread.
-            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(package.DisposalToken);
 
-            OleMenuCommandService commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
+            IServiceProvider serviceProvider = package;
+            OleMenuCommandService commandService = serviceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
+
             Instance = new AttachIISCommand(package, commandService);
         }
 
@@ -101,7 +91,7 @@ namespace Moksnes.Attach
             string title = "Attach To IIS";
             bool isAdministrator = IsAdministrator();
 
-            var dte = (DTE)SyncServiceProvider.GetService(typeof(DTE));
+            var dte = (DTE)ServiceProvider.GetService(typeof(DTE));
             foreach (Process process in dte.Debugger.LocalProcesses)
             {
                 if (process.Name.EndsWith("w3wp.exe"))

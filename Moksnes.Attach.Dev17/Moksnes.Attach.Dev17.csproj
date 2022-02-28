@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="AttachIISCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AttachPackage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">

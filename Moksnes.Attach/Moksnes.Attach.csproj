@@ -51,7 +51,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AttachIISCommand.cs" />
-    <Compile Include="AttachPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

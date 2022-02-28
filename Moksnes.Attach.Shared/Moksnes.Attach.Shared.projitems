@@ -14,4 +14,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AttachPackage.cs" />
+  </ItemGroup>
 </Project>
